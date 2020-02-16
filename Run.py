@@ -1,10 +1,17 @@
 #!/usr/bin/python
 # -*- coding: UTF-8 -*-
 
-import argparse
+from lib.core.argument_parser import argument_parser
 
 def main():
-    pass
+    options = argument_parser()
+    if options.nginx == True:
+        exit()
+    elif options.apache == True:
+        exit()
+    else:
+        exit()
+
 
 if __name__ == "__main__":
-    pass
+    main()

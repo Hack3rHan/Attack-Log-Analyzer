@@ -2,18 +2,16 @@
 # -*- coding: UTF-8 -*-
 
 from lib.core.argument_parser import argument_parser
+from lib.analyzer import *
 
 def main():
     options = argument_parser()
-    '''
-    options.nginx [True/False]
-    options.apache [True/False]
-    options.File_Path The path of log file
-    '''
     if options.nginx == True:
-        exit()
+        nginx(options.File_Path)
     elif options.apache == True:
-        exit()
+        apache(options.File_Path)
+    elif options.iis == True:
+        iis(options.File_Path)
     else:
         exit()
 

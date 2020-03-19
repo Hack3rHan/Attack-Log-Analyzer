@@ -3,6 +3,6 @@
 
 from lib.match import *
 
-def nginx(file_path):
+def iis(file_path):
     file = open ('file_path', 'r')
     file.close()

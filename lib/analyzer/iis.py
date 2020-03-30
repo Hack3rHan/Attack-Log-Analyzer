@@ -1,8 +1,10 @@
 #!/usr/bin/python
 # -*- coding: UTF-8 -*-
 
-from lib.match import *
+class IISAnalyzer():
+    file_path = ''
+    log = ''
 
-def iis(file_path):
-    file = open ('file_path', 'r')
-    file.close()
+    def __init__(self, file_path):
+        self.file_path = file_path
+        super().__init__()

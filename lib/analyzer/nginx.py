@@ -1,8 +1,11 @@
 #!/usr/bin/python
 # -*- coding: UTF-8 -*-
 
-from lib.match import sqli
+
 from lib.core import Messages
+from lib.vulnerability import sqli
+from lib.vulnerability import code_exec
+from lib.vulnerability import webshell
 
 
 class NginxAnalyzer():
@@ -19,6 +22,8 @@ class NginxAnalyzer():
     def processed(self):
         self.get_url_and_user_agent()
         self.detect_sqli()
+        self.detcet_code_exec()
+        self.detect_webshell()
 
     def get_url_and_user_agent(self):
         file = open (self.file_path, 'r')
@@ -50,7 +55,25 @@ class NginxAnalyzer():
             self.message.info_vulnerability_not_find('SQL Injection')
     
     def detcet_code_exec(self):
-        pass
+        self.message.info_start_to_analyze('Code Execution or Command Execution')
+        line = 1
+        code_exec_exist = False
+        for url in self.url_list:
+            if code_exec(url) == True:
+                code_exec_exist = True
+                self.message.vulnerability_find('Code Execution or Command Execution', line, url)
+            line = line + 1
+        if code_exec_exist == False:
+            self.message.info_vulnerability_not_find('Code Execution or Command Execution')
 
     def detect_webshell(self):
-        pass
+        self.message.info_start_to_analyze('Web Shell')
+        line = 1
+        webshell_exist = False
+        for url in self.url_list:
+            if webshell(url) == True:
+                webshell_exist = True
+                self.message.vulnerability_find('Web Shell', line, url)
+            line = line + 1
+        if webshell_exist == False:
+            self.message.info_vulnerability_not_find('Web Shell')

@@ -1,7 +1,6 @@
 #!/usr/bin/python
 # -*- coding: UTF-8 -*-
 
-
 from lib.core import Messages
 from lib.vulnerability import sqli
 from lib.vulnerability import code_exec_and_file_include
@@ -93,12 +92,9 @@ class IISAnalyzer():
     
     def detect_cms(self):
         self.message.info_start_to_analyze('CMS Vulnerability')
-        line = 1
         cms_vulnerability_exist = False
         for url in self.url_list:
             if cms_vulnerability(url) == True:
                 cms_vulnerability_exist = True
-                self.message.vulnerability_find('CMS Vulnerability', line, url)
-            line = line + 1
         if cms_vulnerability_exist  == False:
             self.message.info_vulnerability_not_find('CMS Vulnerability')

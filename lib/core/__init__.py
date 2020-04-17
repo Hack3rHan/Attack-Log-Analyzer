@@ -3,3 +3,4 @@
 
 from lib.core.argument_parser import argument_parser
 from lib.core.messages import Messages
+from lib.core.messages import Colored

@@ -27,7 +27,7 @@ class ApacheAnalyzer():
         self.detcet_code_exec_and_file_include()
         self.detect_webshell()
         self.detect_hack_tools()
-        self.detect_cms()
+      #  self.detect_cms()
 
     def get_url_and_user_agent(self):
         file = open (self.file_path, 'r')

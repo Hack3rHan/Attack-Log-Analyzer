@@ -1,10 +1,10 @@
 #!/usr/bin/python
 # -*- coding: UTF-8 -*-
 
-from lib.core import argument_parser
-from lib.analyzer import ApacheAnalyzer
-from lib.analyzer import NginxAnalyzer
-from lib.analyzer import IISAnalyzer
+from lib.argument_parser import argument_parser
+from lib.Analyzer import ApacheAnalyzer
+from lib.Analyzer import NginxAnalyzer
+from lib.Analyzer import IISAnalyzer
 
 def main():
     options = argument_parser()

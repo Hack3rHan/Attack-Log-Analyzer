@@ -26,9 +26,7 @@ class Messages():
         print(self.color.yellow('[*] INFO: There is no ' + vulnerability_type + ' find in this log file.'))
 
     def vulnerability_find(self, vulnerability_type = '', line_number = 0, log_string = ''):
-        print(self.color.red('[!] VULNERABILITY: Type: ' + vulnerability_type + ' Find vulnerability in line ' + str(line_number)))
+        print(self.color.red('[!] VULNERABILITY: Type: ' + vulnerability_type + '. Find vulnerability in line ' + str(line_number)))
         print(self.color.red('[!] VULNERABILITY: original string: ' + log_string + '\n'))
 
-    def vulnerability_cms_vul_find(self, vulnerability_type = ''):
-        print(self.color.red('[!] VULNERABILITY: ' + vulnerability_type + 'Find. Please Check your CMS Version'))
     

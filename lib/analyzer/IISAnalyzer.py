@@ -35,11 +35,15 @@ class IISAnalyzer():
         file = open (self.file_path, 'r')
         log = file.readline()
         while log:
-            try:
-                self.url_list.append(log.split(' ')[6])
-                self.user_agent_list.append(log.split(' ')[11])
-            except IndexError:
-                pass
+            if log[0] == '#':
+                log = file.readline()
+                continue
+            else:
+                try:
+                    self.url_list.append(log.split(' ')[4] + log.split(' ')[5])
+                    self.user_agent_list.append(log.split(' ')[9])
+                except IndexError:
+                    pass
             log = file.readline()
 
     def detect_sqli(self):

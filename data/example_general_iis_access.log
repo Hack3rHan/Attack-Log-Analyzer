@@ -1,0 +1,15 @@
+#Software: Microsoft Internet Information Services 10.0
+#Version: 1.0
+#Date: 2020-04-19 09:06:53
+#Fields: date time s-ip cs-method cs-uri-stem cs-uri-query s-port cs-username c-ip cs(User-Agent) cs(Referer) sc-status sc-substatus sc-win32-status time-taken
+2020-04-19 09:06:53 127.0.0.1 GET / - 80 - 127.0.0.1 Mozilla/5.0+(Windows+NT+10.0;+Win64;+x64)+AppleWebKit/537.36+(KHTML,+like+Gecko)+Chrome/80.0.3987.163+Safari/537.36 - 200 0 0 2087
+2020-04-19 09:06:53 127.0.0.1 GET /iisstart.png - 80 - 127.0.0.1 Mozilla/5.0+(Windows+NT+10.0;+Win64;+x64)+AppleWebKit/537.36+(KHTML,+like+Gecko)+Chrome/80.0.3987.163+Safari/537.36 http://127.0.0.1/ 200 0 0 40
+2020-04-19 09:06:53 127.0.0.1 GET /favicon.ico - 80 - 127.0.0.1 Mozilla/5.0+(Windows+NT+10.0;+Win64;+x64)+AppleWebKit/537.36+(KHTML,+like+Gecko)+Chrome/80.0.3987.163+Safari/537.36 http://127.0.0.1/ 404 0 2 18
+2020-04-19 09:07:00 127.0.0.1 GET /admin - 80 - 127.0.0.1 Mozilla/5.0+(Windows+NT+10.0;+Win64;+x64)+AppleWebKit/537.36+(KHTML,+like+Gecko)+Chrome/80.0.3987.163+Safari/537.36 - 404 0 2 1
+2020-04-19 09:07:22 127.0.0.1 GET / id=1 80 - 127.0.0.1 Mozilla/5.0+(Windows+NT+10.0;+Win64;+x64)+AppleWebKit/537.36+(KHTML,+like+Gecko)+Chrome/80.0.3987.163+Safari/537.36 - 200 0 0 0
+2020-04-19 09:07:22 127.0.0.1 GET /iisstart.png - 80 - 127.0.0.1 Mozilla/5.0+(Windows+NT+10.0;+Win64;+x64)+AppleWebKit/537.36+(KHTML,+like+Gecko)+Chrome/80.0.3987.163+Safari/537.36 http://127.0.0.1/?id=1 304 0 0 23
+2020-04-19 09:07:27 127.0.0.1 GET / id=1%27or%271%27=%271 80 - 127.0.0.1 Mozilla/5.0+(Windows+NT+10.0;+Win64;+x64)+AppleWebKit/537.36+(KHTML,+like+Gecko)+Chrome/80.0.3987.163+Safari/537.36 - 200 0 0 2
+2020-04-19 09:07:31 127.0.0.1 GET /admin - 80 - 127.0.0.1 Mozilla/5.0+(Windows+NT+10.0;+Win64;+x64)+AppleWebKit/537.36+(KHTML,+like+Gecko)+Chrome/80.0.3987.163+Safari/537.36 - 404 0 2 1
+2020-04-19 09:07:35 127.0.0.1 GET /admin.html - 80 - 127.0.0.1 Mozilla/5.0+(Windows+NT+10.0;+Win64;+x64)+AppleWebKit/537.36+(KHTML,+like+Gecko)+Chrome/80.0.3987.163+Safari/537.36 - 404 0 2 2
+2020-04-19 09:07:39 127.0.0.1 GET /test - 80 - 127.0.0.1 Mozilla/5.0+(Windows+NT+10.0;+Win64;+x64)+AppleWebKit/537.36+(KHTML,+like+Gecko)+Chrome/80.0.3987.163+Safari/537.36 - 404 0 2 1
+2020-04-19 09:07:43 127.0.0.1 GET /dbfidsbfhu - 80 - 127.0.0.1 Mozilla/5.0+(Windows+NT+10.0;+Win64;+x64)+AppleWebKit/537.36+(KHTML,+like+Gecko)+Chrome/80.0.3987.163+Safari/537.36 - 404 0 2 1

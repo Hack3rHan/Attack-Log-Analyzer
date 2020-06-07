@@ -2,9 +2,9 @@
 # -*- coding: UTF-8 -*-
 
 from lib.argument_parser import argument_parser
-from lib.Analyzer import ApacheAnalyzer
-from lib.Analyzer import NginxAnalyzer
-from lib.Analyzer import IISAnalyzer
+from lib.analyzer import ApacheAnalyzer
+from lib.analyzer import NginxAnalyzer
+from lib.analyzer import IISAnalyzer
 
 def main():
     options = argument_parser()

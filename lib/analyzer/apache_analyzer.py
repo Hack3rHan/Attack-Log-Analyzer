@@ -1,20 +1,19 @@
 #!/usr/bin/python
 # -*- coding: UTF-8 -*-
-
 from lib.analyzer import Analyzer
 from lib.message import Messages
 from lib.output import Output
-from lib.vulnerability import sqli
-from lib.vulnerability import code_exec_and_file_include
-from lib.vulnerability import webshell
-from lib.vulnerability import hack_tools
 from lib.vulnerability import cms_vulnerability
+from lib.vulnerability import code_exec_and_file_include
+from lib.vulnerability import hack_tools
+from lib.vulnerability import sqli
+from lib.vulnerability import webshell
+
 
 class ApacheAnalyzer(Analyzer):
 
     def __init__(self, file_path:str):
         super().__init__(file_path)
-
 
     def processed(self):
         self._output.init_form()

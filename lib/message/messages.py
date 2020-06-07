@@ -5,6 +5,7 @@ from colorama import  init, Fore, Back, Style
 
 init(autoreset=True)
 
+
 class Colored(object):
 
     def red(self, s):
@@ -15,6 +16,7 @@ class Colored(object):
 
     def yellow(self, s):
         return Fore.YELLOW + s + Fore.RESET
+
 
 class Messages():
     color = Colored()
